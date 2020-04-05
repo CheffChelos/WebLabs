@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="snow.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="container">
+                <img src="./images/logo-main.png" alt="logo-main" class="logo">
+                <div class="navbar-block">
+                    <input type="checkbox" id="burger-check" checked>
+                    <label for="burger-check" class="burger-label"><i class="fa fa-bars"></i></label>
+                    <ul class="navbar">
+                        <li class="navbar__item"><a href="#header" class="navbar__link">ГЛАВНАЯ</a></li>
+                        <li class="navbar__item"><a href="#about-us" class="navbar__link">О НАС</a></li>
+                        <li class="navbar__item"><a href="#services" class="navbar__link">УСЛУГИ</a></li>
+                        <li class="navbar__item"><a href="#sale" class="navbar__link">АКЦИИ</a></li>
+                        <li class="navbar__item"><a href="#order" class="navbar__link">КАК ЗАКАЗАТЬ</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <a href="#"><img src="./images/Vector.svg" alt="" class="contac__img"></a>
+                    <a href="#"><img src="./images/Group 42.svg" alt="" class="contac__img"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="rest">
+            <div class="container">
+                <div class="call-to-action">
+                    <h1>Climastery:<br>
+                        Установка и обслуживание<br>
+                        кондиционеров </h1>
+                    <p class="description">Позвольте нам позаботится о вашем комфорте</p>
+                    <a href="#order" class="anch">Подобрать кондиционер</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section id="about-us">
+        <div class="container">
+            <div class="left-side">
+                <h2>О <span>КОМПАНИИ</span></h2>
+                <p>Наша небольшая компания предоставляет услуги установки кондиционеров на общепринятом,
+                    европейском
+                    уровне по ценам ниже рыночных</p>
+                <p>Мы - команда профессионалов, поможем вам подобрать ваш идеальный кондиционер по ряду критериев:
+                    площадь применения, тип кондиционера, цена, режим работы, набор услуг, местоположение<br>
+                    <span>Climastery</span> – ваш проводник в мире кондиционеров</p>
+            </div>
+            <img src="./images/about-image.png" alt="about">
+        </div>
+    </section>
+
+    <section id="sale">
+        <div class="container">
+            <h2>ТОВАРЫ <span>ПО АКЦИИ</span></h2>
+            <div class="sale">
+                <div>
+                    <img src="./images/sale.png" alt="">
+                    <p class="cond-name">CHIGO CS-25V-L19</p>
+                    <ul class="card-props">
+                        <li>Тип: <span>Инверторный</span></li>
+                        <li>Площадь: <span>до 30 кв.м</span></li>
+                        <li>Режим работы: <span>обогрев и охлаждение</span></li>
+                        <li>Гарантия: <span>5 лет</span></li>
+                    </ul>
+                    <p><s>12 000грн.</s> 10 599 грн.</p>
+                    <button type="button" class="order__btn">Заказать</button>
+                </div>
+                <div>
+                    <img src="./images/sale.png" alt="">
+                    <p class="cond-name">CHIGO CS-25V-L12</p>
+                    <ul class="card-props">
+                        <li>Тип: <span>Инверторный</span></li>
+                        <li>Площадь: <span>до 30 кв.м</span></li>
+                        <li>Режим работы: <span>обогрев и охлаждение</span></li>
+                        <li>Гарантия: <span>5 лет</span></li>
+                    </ul>
+                    <p><s>12 000грн.</s> 10 599 грн.</p>
+                    <button type="button" class="order__btn">Заказать</button>
+                </div>
+                <div>
+                    <img src="./images/sale.png" alt="">
+                    <p class="cond-name">CHIGO CS-25V-L13</p>
+                    <ul class="card-props">
+                        <li>Тип: <span>Инверторный</span></li>
+                        <li>Площадь: <span>до 30 кв.м</span></li>
+                        <li>Режим работы: <span>обогрев и охлаждение</span></li>
+                        <li>Гарантия: <span>5 лет</span></li>
+                    </ul>
+                    <p><s>12 000грн.</s> 10 599 грн.</p>
+                    <button type="button" class="order__btn">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <!--popup form starts here-->
+        <div class="popup">
+            <div class="modal-content">
+                <div class="form__head">
+                    <a href="#" class="times"><i class="fa fa-times"></i></a>
+                    <h3>Заказать</h3>
+                </div>
+                <form id="popup-form">
+                    <input type="text" name="name" placeholder="Ваше имя" id="name" required>
+                    <input type="text" name="phone" placeholder="Ваш телефон" id="phone" required>
+                    <input type="submit" class="popup-submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <div class="container">
+            <h2>ПОДОБРАТЬ <span>КОНДИЦИОНЕР</span></h2>
+            <form>
+                <input type="text" id="name-main" placeholder="Введите ваше имя">
+                <input type="text" id="phone-main" placeholder="Введите ваш номер телефона">
+                <select id="area">
+                    <option value="none">Площадь применения</option>
+                    <option value="area-1">от 20 до 25 м²</option>
+                    <option value="area-2">от 25 до 35 м²</option>
+                    <option value="area-3">от 35 до 50 м²</option>
+                    <option value="area-4">от 50 до 70 м²</option>
+                </select>
+                <select id="serv">
+                    <option value="none">Доп услуги</option>
+                    <option value="serv-1">Установка</option>
+                    <option value="serv-2">Очистка</option>
+                </select>
+                <select id="type">
+                    <option value="none">Тип</option>
+                    <option value="type-1">Инверторный</option>
+                    <option value="type-2">Не инверторный</option>
+                </select>
+                <select id="mode">
+                    <option value="none">Режим работы</option>
+                    <option value="mode-1">Охлаждение</option>
+                    <option value="mode-2">Охлаждение и обогрев</option>
+                </select>
+                <input type="text" id="dest" placeholder="Местонахождение">
+                <input type="text" id="budget" placeholder="Укажите ваш бюджет">
+            </form>
+            <input type="submit" id="submit__btn">
+        </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
